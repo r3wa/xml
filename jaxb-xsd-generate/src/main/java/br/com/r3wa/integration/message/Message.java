@@ -9,6 +9,16 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+/**
+ * 
+ * This class is one basic example with generate XSD staring of Java Objects using 
+ * <a href="https://jaxb.java.net/">JAXB 2.0 <a/> and <a href="http://mojo.codehaus.org/jaxb2-maven-plugin/">JAXB2 Maven Plugin</a>   
+ * <br>
+ * For more details how about configuration JAXB2 Maven Plugin see It's home page.
+ * 
+ * @author r3wa
+ *
+ */
 @XmlType(namespace = "http://r3wa.com.br")
 @XmlAccessorType(FIELD)
 @XmlRootElement
@@ -32,6 +42,5 @@ public class Message {
 	 */
 	@XmlElement(required=true)
 	private List<Line> lines ;
-
 
 }
